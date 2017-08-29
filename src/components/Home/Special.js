@@ -1,0 +1,25 @@
+/**
+ *  Created by wangjun on 2017/8/25.
+ **/
+
+import React from 'react'
+
+/*files*/
+const zht_1 = require('./files/zht1.jpg')
+const zht_2 = require('./files/zht2.jpg')
+
+const Special = () => {
+    return (
+        <div className="style_main">
+            <div className="style_div">
+                <div className="style_left">
+                    <img src={zht_1} className="style_img" />
+                </div>
+                <div className="style_right">
+                    <img src={zht_2} className="style_img" />
+                </div>
+            </div>
+        </div>
+    )
+}
+export default Special
