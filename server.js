@@ -11,6 +11,7 @@ new WebpackDevServer(webpack(config), {
     hot: true,
     compress: true,
     historyApiFallback: true,
+    contentBase:'src/',
     publicPath: '/build/',
     watchOptions: {
         ignored: /node_modules/,
