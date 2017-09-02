@@ -99,7 +99,7 @@ module.exports = {
             use: isPro ? ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: ["css-loader", "less-loader"]
-                }) : ["style-loader", "css-loader", "less-loader"]
+                }) : ["style-loader", "css-loader","postcss-loader" , "less-loader"]
         }, {
             test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
             use: ['file-loader?limit=1000&name=files/[md5:hash:base64:10].[ext]']
