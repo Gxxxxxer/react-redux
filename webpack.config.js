@@ -47,8 +47,8 @@ if (isPro) {
       new HtmlWebpackPlugin({
           //自动生成html
           template: path.join(__dirname, './index.html'),
-          chunksSortMode: 'dependency',
-      }),
+          chunksSortMode: 'dependency'
+      })
   )
 } else {
     app.unshift('react-hot-loader/patch', `webpack-dev-server/client?http://${webpackServerConfig.host}:${webpackServerConfig.port}`, 'webpack/hot/only-dev-server')
